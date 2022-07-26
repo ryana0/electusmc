@@ -1,3 +1,8 @@
+if(!sessionStorage.getItem('hasReloaded')) {
+    sessionStorage.setItem('hasReloaded', true)
+    window.location.reload()
+}
+
 Object.defineProperty(String.prototype, 'capitalize', {
     value: function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
@@ -42,7 +47,6 @@ function getGuilds() {
 getGuilds()
 
 rankGuilds()
-console.log(rankedGuilds)
 
 function loadGuilds() {
     for(i = 0; i < guilds.length; i++) {
@@ -58,6 +62,7 @@ function loadGuilds() {
         document.querySelectorAll('.guild')[i].querySelectorAll('p')[0].textContent = 'Weekly Exp: ' + guildObj.weekly.toLocaleString()
         document.querySelectorAll('.guild')[i].querySelectorAll('p')[1].textContent = 'Total Exp: ' + guildObj.total.toLocaleString()
     }
+
 }
 
 loadGuilds()
@@ -73,7 +78,7 @@ function calcAverage(arr) {
 }
 
 function changeGuild(guildName) {
-    console.log(guildName)
+
     document.querySelector('#moreContent').innerHTML = `
     <div id="exit"><div></div></div>
     <h1 id="guildTitle"> <span></span></h1>
