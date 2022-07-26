@@ -1,3 +1,11 @@
+if(navigator.userAgent.includes('iPad') || navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('iPod') || navigator.userAgent.includes('Macintosh')) {
+    document.body.querySelector('#header').style.display = 'none' 
+    document.body.querySelector('#content').style.display = 'none' 
+    element = document.createElement('div')
+    element.textContent = 'get on a pc lol'
+    document.body.appendChild(element)
+}
+
 if(!sessionStorage.getItem('hasReloaded')) {
     sessionStorage.setItem('hasReloaded', true)
     window.location.reload()
