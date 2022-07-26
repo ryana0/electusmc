@@ -10,6 +10,11 @@ document.querySelector('#call').addEventListener('click', () => {
     window.location.href = '#discord'
 })
 
+const electus = document.querySelector('#electus')
+electus.addEventListener('click', () => {
+    window.location.href = '#'
+})
+
 const panorama = document.querySelector('#panorama')
 const images = ['images/spawn.jpg', 'images/mid1.jpg', 'images/mid2.jpg', 'images/mid3.jpg', 'images/diamond.jpg']
 

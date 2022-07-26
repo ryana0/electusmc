@@ -11,6 +11,11 @@ if(!sessionStorage.getItem('hasReloaded')) {
     window.location.reload()
 }
 
+const electus = document.querySelector('#electus')
+electus.addEventListener('click', () => {
+    window.location.href = '../'
+})
+
 Object.defineProperty(String.prototype, 'capitalize', {
     value: function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
