@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electus</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/544742869207089204/985766693689241610/unknown.png" type="image/x-icon">
+    </head>
+    <body>
+        <section id="moreOverlay">
+            <div id="moreContent">
+                <div id="exit" onclick="consoleBruh"><div></div></div>
+                <h1 id="guildTitle"> <span></span></h1>
+                <div id="gexpInfo">
+                    <h1>Total GEXP:</h1>
+                    <h1>Weekly GEXP:</h1>
+                    <h1>Average Weekly:</h1>
+                    <h1>GEXP Gain: </h1>
+                    <h1>Distance to #:</h1>
+                    <h1>Passing (weeks):</h1>
+                </div>
+                <div id="chartContainer">
+                    <canvas id="gexpChart"></canvas>
+                    <div id="toggleChart">Total GEXP</div>
+                </div>
+            </div>
+        </section>
+        <section id="header">
+            <h1 id="electusHead">Electus</h1>
+            <div id="headings">
+                <a href="../#about" id="aboutHe">ABOUT</a>
+                <a href="../#staff" id="staffHe">STAFF</a>
+                <a href="../#apply" id="applyHe">APPLY</a>
+            </div>
+        </section>
+        <section id="content">
+            <section id="options"></section>
+            <div class="guild" id="lucid">
+                <h1>Lucid <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.com/invite/DDTMad2pYR">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild mid" id="rawr">
+                <h1>Rawr <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.gg/rawrguild">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            
+            <div class="guild" id="leman">
+                <h1>Leman <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a style="background-color: hsl(235, 10%, 50%);" >PRIVATE</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild" id="electus">
+                <h1 id="electusTitle">Electus <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.gg/dPVGXT9Gak">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild mid" id="puffy">
+                <h1>Puffy <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a style="background-color: hsl(235, 10%, 50%);">PRIVATE</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild" id="tmr">
+                <h1>TMR <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.gg/fMuTB36">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild" id="effusion">
+                <h1>Effusion <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a style="background-color: hsl(235, 10%, 50%);">PRIVATE</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild mid" id="hypixel knights">
+                <h1 style="font-size: 3vh;">Hypixel Knights <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.gg/yVVPU25JEF">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild" id="les gaulois">
+                <h1>Les Gaulois <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.gg/lesgaulois">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+            <div class="guild" id="honra">
+                <h1>Honra <span></span></h1>
+                <div class="info">
+                    <div class="guildInfo">
+                        <h1>Member Count: </h1>
+                        <h1 style="margin-top: 7.5%;">Created: </h1>
+                    </div>
+                    <div class="gexp">
+                        <p>Weekly GEXP: </p>
+                        <p>Total GEXP: </p>
+                    </div>
+                    <a href="https://discord.com/invite/G9gPcdP">DISCORD</a>
+                    <button>MORE</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
