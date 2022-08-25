@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teamgrief makes a color game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section id="overlay">
+        <div id="start"><h1>Start</h1></div>
+    </section>
+    <section id="main">
+        <section id="timer">
+            <h1 id="clock">10.00</h1>
+        </section>
+        <section id="sliders">
+            <input type="range" id="red" value=0 min=0 max=255 label="Red">
+            <input type="range" id="green" value=0 min=0 max=255>
+            <input type="range" id="blue" value=0 min=0 max=255>
+            <div id="userColor">
+                <h1>rgb(0, 0, 0)</h1>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #44444499;
+    z-index: 2;
+}
+
+#start {
+    width: 20%;
+    height: 15%;
+    background-color: #2cac2c;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    user-select: none;
+    display: table;
+}
+
+#start h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 40%;
+}
+
+#timer {
+    width: 100%;
+    height: 100%;
+}
+
+#clock {
+    margin-top: 2.5%;
+    margin-left: 87.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 5vh;
+    text-align: center;
+    width: 8%;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#sliders {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+input {
+    grid-column: 1;
+    color: white;
+    margin-left: 10%;
+    width: 75%;
+}
+
+#userColor {
+    background-color: black;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1/4;
+    width: 25vh;
+    height: 25vh;
+    border: 10px solid white;
+}
+
+#userColor h1 {
+    font-family: Verdana;
+    text-align: center;
+    background-color: white;
+    text-align: center;
+    padding: 0.5rem;
+    padding-top: 0.25rem;
+}
