@@ -4,6 +4,7 @@ const start = document.querySelector('#start')
 start.addEventListener('click', () => {
     if(hasStarted) {
         main.style.backgroundColor = generateColor()
+        userColor.style.backgroundColor = '#000000'
     }
     hasStarted = true
     document.querySelector('#overlay').style.display = 'none'
