@@ -1,5 +1,11 @@
+let hasStarted = false
+
 const start = document.querySelector('#start')
 start.addEventListener('click', () => {
+    if(hasStarted) {
+        main.style.backgroundColor = generateColor()
+    }
+    hasStarted = true
     document.querySelector('#overlay').style.display = 'none'
     const clock = document.querySelector('#clock')
     let time = 100
@@ -17,7 +23,7 @@ start.addEventListener('click', () => {
             sliderG.value = 0
             sliderB.value = 0
 
-            main.style.backgroundColor = generateColor()
+            
 
             red = 0
             green = 0
