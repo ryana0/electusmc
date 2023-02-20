@@ -111,57 +111,57 @@ let gmBgTranslate = -50
 const gmGif = document.querySelector('#gmGif')
 let gmGifTranslate = 150
 
-window.addEventListener('scroll', (args) => {
-    scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight)
+// window.addEventListener('scroll', (args) => {
+//     scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight)
 
-    if(scrollPercentage > 0.2 && oldScroll < window.scrollY) {
-        turpBgTranslate += 0.2
-        turpBg.style.transform = `translateX(${turpBgTranslate}%)`
+//     if(scrollPercentage > 0.2 && oldScroll < window.scrollY) {
+//         turpBgTranslate += 0.2
+//         turpBg.style.transform = `translateX(${turpBgTranslate}%)`
 
-        turpGifTranslate += 0.2
-        turpGif.style.transform = `translate(${turpGifTranslate}%, -20%)`
+//         turpGifTranslate += 0.2
+//         turpGif.style.transform = `translate(${turpGifTranslate}%, -20%)`
 
-        madieBgTranslate -= 0.2
-        madieBg.style.transform = `translateX(${madieBgTranslate}%)`
+//         madieBgTranslate -= 0.2
+//         madieBg.style.transform = `translateX(${madieBgTranslate}%)`
 
-        madieGifTranslate -= 0.2
-        madieGif.style.transform = `translate(${madieGifTranslate}%, -10%)`
+//         madieGifTranslate -= 0.2
+//         madieGif.style.transform = `translate(${madieGifTranslate}%, -10%)`
 
-    } else if (scrollPercentage > 0.25 && oldScroll > window.scrollY) {
-        turpBgTranslate -= 0.2
-        turpBg.style.transform = `translateX(${turpBgTranslate}%)`
+//     } else if (scrollPercentage > 0.25 && oldScroll > window.scrollY) {
+//         turpBgTranslate -= 0.2
+//         turpBg.style.transform = `translateX(${turpBgTranslate}%)`
 
-        turpGifTranslate -= 0.2
-        turpGif.style.transform = `translate(${turpGifTranslate}%, -20%)`
+//         turpGifTranslate -= 0.2
+//         turpGif.style.transform = `translate(${turpGifTranslate}%, -20%)`
 
-        madieBgTranslate += 0.2
-        madieBg.style.transform = `translateX(${madieBgTranslate}%)`
+//         madieBgTranslate += 0.2
+//         madieBg.style.transform = `translateX(${madieBgTranslate}%)`
 
-        madieGifTranslate += 0.2
-        madieGif.style.transform = `translate(${madieGifTranslate}%, -10%)`
+//         madieGifTranslate += 0.2
+//         madieGif.style.transform = `translate(${madieGifTranslate}%, -10%)`
 
-    }
+//     }
 
-    if(scrollPercentage > 0.6 && oldScroll < window.scrollY) {
+//     if(scrollPercentage > 0.6 && oldScroll < window.scrollY) {
 
-        gmBgTranslate += 0.1
-        gmBg.style.transform = `translateX(${gmBgTranslate}%)`
+//         gmBgTranslate += 0.1
+//         gmBg.style.transform = `translateX(${gmBgTranslate}%)`
 
-        gmGifTranslate += 0.8
-        gmGif.style.transform = `translateX(${gmGifTranslate}%)`    
+//         gmGifTranslate += 0.8
+//         gmGif.style.transform = `translateX(${gmGifTranslate}%)`    
 
-    } else if (scrollPercentage > 0.6 && oldScroll > window.scrollY) {
+//     } else if (scrollPercentage > 0.6 && oldScroll > window.scrollY) {
 
-        gmBgTranslate -= 0.1
-        gmBg.style.transform = `translateX(${gmBgTranslate}%)`
+//         gmBgTranslate -= 0.1
+//         gmBg.style.transform = `translateX(${gmBgTranslate}%)`
 
-        gmGifTranslate -= 0.8
-        gmGif.style.transform = `translateX(${gmGifTranslate}%)`
+//         gmGifTranslate -= 0.8
+//         gmGif.style.transform = `translateX(${gmGifTranslate}%)`
 
-    }
+//     }
 
-    oldScroll = window.scrollY
-})
+//     oldScroll = window.scrollY
+// })
 
 
 const question = document.querySelector('#selectMain').querySelector('span')
