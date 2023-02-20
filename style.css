@@ -81,9 +81,9 @@ body {
 #headings {
     grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 45%;
+    width: 40%;
     margin-right: 2%;
     height: 100%;
     justify-self: flex-end;
